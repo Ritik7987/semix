@@ -2,32 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.navbar_section{
+
+  	color: #888888;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --title-fonts: 'Lexend', sans-serif;
+    --text-fonts: 'Open Sans', sans-serif;
+    --icon-fonts: "template-icon", sans-serif;
+    --primary-color: #DB6B30;
+    --secondary-color: #003349;
+    --text-color: #0D274F;
+    --light-color: #fff;
+    --highlight-color: #b14f1b;
+    --bg-header: #FFFFFF;
+    --header-color: #003349;
+    --bg-footer: #000105;
+    --footer-color: #FFFFFF;
+    --gutter-padding: 20px;
+    --gutter-margin: -20px;
+    --gutter-padding-xl: 60px;
+    --gutter-margin-xl: -60px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+li{
+	padding: 10px 15px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+  
+* {
+    box-sizing: border-box;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+  
+  
